@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(244, 82, 19);
+    color: white;
+    background-attachment: fixed;
+    
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/*to remove default margin*/
+body {
+    margin: 0px;
+}
+
+/*spacing because anchor tag is block type element*/
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    /*for aligning navbar*/
+    text-align: center;
+    /* for spacing in elements */
+    padding: 20px;
+    float: left;
+}
+
+/*nav is inline, so provide background color*/
+nav {
+    display: flex;
+    background-color: black;
+    /*overflow: hidden;*/
+}
+
+/* to show changes while hover */
+nav a:hover {
+    color: darkgreen;
+}
+
+li b {
+    background-color: greenyellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: blue;
+}
+
+li {
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+h2 span {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(243, 243, 59);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+h2 span:hover {
+    background-color: rgb(236, 107, 107);
+    color: blue;
+    border: 2px solid black;
+    border-radius: 50%
+}
+
+h1 {
+    display: inline;
+    padding: 10px;
+}
+
+h1:hover {
+  
+    color: black;
+    border-radius: 100%
+}
+
+#founder a {
+    background-color: rgb(196, 208, 208);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+#founder a:hover {
+    background-color: rgb(23, 20, 231);
+    color: white;
+}
+
+#founder a i {
+    color: rgb(9, 3, 96);
+}
+
+#login {
+    background: linear-gradient(rgb(10, 197, 207), rgb(241, 103, 103));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.background{
+    background: linear-gradient(rgb(10, 197, 207), rgb(241, 103, 103));
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    background: linear-gradient(rgb(10, 197, 207), rgb(241, 103, 103));
+    width: 100%;
+    height: 100%;
+}
+input[type="text"],
+input[type="submit"],
+input[type="password"] {
+    padding: 5px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    border: 3px solid black;
+    padding: 12px;
+    margin: 60px 500px 60px 500px;
+    background-color: aqua;
+}
+
+
+h1[id=contact] {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(40, 39, 39);
+    /*for aligning navbar*/
+    text-align: center;
+    /* for spacing in elements */
+    padding: 20px;
+    float: center;
+    display: block;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+}
+
+.flex-align-right {
+    margin-left: auto;
+}
+
+div[id=courses] {
+    display: grid;
+}
+
+#mathbook{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 40px;
+    padding: 20px;
+    text-decoration: underline;
+}
+#chemNcert{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 40px;
+    padding: 20px;
+    text-decoration: underline;
+}
+#courses {
+    background: linear-gradient(rgb(10, 197, 207), rgb(241, 103, 103));
+    width: 100%;
+    height: 100%;
+}
+#courses h1{
+    display: grid;
+    text-align: center;
+    text-decoration: underline;
+}
+.Maths {
+    background-color: rgb(249, 206, 35);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.NCERT{
+    background-color: rgb(171, 247, 20);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 40px;
+}
+.Btech{
+    background-color: rgb(249, 35, 249);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 40px;
+}
+.menu-button:hover {
+    background-color: white;
+    color: black;
+    /*makes circular border*/
+    /*same can be used for images als0*/
+    border-radius: 50%;
+}
